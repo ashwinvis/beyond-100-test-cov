@@ -7,14 +7,14 @@
 
 # About me and the demo
 
-<https://fluid.quest/pyconse2022>
+### <https://fluid.quest/pyconse2022>
 
 ## Problem statement
 
 A CLI tool which
 
-- Read a CSV file containing a list of cities and their founding year
-- Does some operation, for example, printing the result
+- **Read a CSV file** containing a list of cities and their founding year
+- Does some **operation**, for example, **printing the result**
 
 # How does `typing` help you?
 
