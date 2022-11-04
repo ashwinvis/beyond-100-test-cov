@@ -28,3 +28,5 @@ format:
 	black src tests
 	isort src tests
 
+pyupgrade:
+	pyupgrade --py39-plus src/*.py

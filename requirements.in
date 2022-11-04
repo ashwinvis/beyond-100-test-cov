@@ -4,3 +4,4 @@ pytest-cov
 mypy
 black
 isort
+pyupgrade
