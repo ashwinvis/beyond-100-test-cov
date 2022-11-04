@@ -1,0 +1,19 @@
+[build-system]
+requires = [
+    "setuptools>=61.0.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swedish_cities"
+version = "0.0.0"
+requires-python = ">=3.9"
+license = {text = "Apache 2.0", data = "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported"}
+
+[tool.coverage.report]
+# Regexes for lines to exclude from consideration
+exclude_lines = [
+    # Don't complain if non-runnable code isn't run:
+    "if __name__ == .__main__.:"
+]
