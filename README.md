@@ -1,6 +1,5 @@
 # Beyond 100% test coverage
 
-
 *A.K.A.*
 
 - Why 100% test coverage is not good enough
@@ -12,10 +11,10 @@
 
 ## Problem statement
 
-A CLI   tool which
+A CLI tool which
 
 - Read a CSV file containing a list of cities and their founding year
-- Printing the result
+- Does some operation, for example, printing the result
 
 # How does `typing` help you?
 
