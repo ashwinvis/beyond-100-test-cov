@@ -1,5 +1,4 @@
 import csv
-import sys
 
 
 def load_data(filename):
