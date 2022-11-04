@@ -1,7 +1,4 @@
-# Two edge-cases
-
-- None
-- Indexing a set
-
 # How does `typing` help you?
 
+- Find edge cases such as type inconsistencies
+- Sniff out branches and mutations in your code
