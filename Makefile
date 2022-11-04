@@ -9,7 +9,7 @@ tests:
 	pytest --cov --cov-report=term-missing
 
 types:
-	mypy src
+	mypy --ignore-missing-imports src tests
 
 cli_v1:
 	python -m swedish_cities_v1

@@ -1,9 +1,9 @@
 import csv
 import sys
-from typing import Iterable, Mapping, MutableMapping, Optional, Set
+from typing import List, Dict, Optional, Set
 
 
-def load_data(filename: str) -> MutableMapping[str, int]:
+def load_data(filename: str) -> Dict[str, int]:
     data = {}
     with open(filename, newline="") as csvfile:
         reader = csv.reader(csvfile)
@@ -19,7 +19,7 @@ def should_be_filtered(cond: str, year: int) -> bool:
     return result
 
 
-def filter_data(all_cities: Mapping[str, int], conditions: Iterable[str]) -> Set[str]:
+def filter_data(all_cities: Dict[str, int], conditions: List[str]) -> Set[str]:
     """Filter data based on the year."""
     cities = None
     # FIXME:
@@ -37,12 +37,12 @@ def filter_data(all_cities: Mapping[str, int], conditions: Iterable[str]) -> Set
     return cities
 
 
-def print_data(cities: Mapping[str, int]):
+def print_data(cities: Dict[str, int]):
     for city, year in cities.items():
         print(city, "was established in", year)
 
 
-def main(argv: Optional[Iterable[str]] = None):
+def main(argv: Optional[List[str]] = None):
     data = load_data("data.csv")
 
     # NOTE: New filter feature

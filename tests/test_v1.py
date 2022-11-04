@@ -4,7 +4,7 @@ import swedish_cities_v1 as sc
 
 
 def pandas_load(csv_file):
-    df = pd.read_csv("data.csv", names=("city", "year")).set_index("city")
+    df = pd.read_csv(csv_file, names=("city", "year")).set_index("city")
     return df.year.to_dict()
 
 
